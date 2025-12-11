@@ -1,5 +1,3 @@
-// mock-server/mock-server.js
-
 const express = require('express');
 
 const app = express();
