@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 
-const API_URL = 'http://localhost:4000';
+const API_URL = 'http://127.0.0.1:4000';
+
 
 test.describe('Mock API - Authentication', () => {
   test('✅ 로그인 성공 시 token을 반환한다', async ({ request }) => {
