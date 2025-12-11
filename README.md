@@ -1,3 +1,6 @@
+![Playwright](https://img.shields.io/badge/Test-Playwright-45ba4b?logo=playwright)
+![Node.js](https://img.shields.io/badge/Node.js-Mock%20Server-75aa63?logo=node.js)
+![Automation](https://img.shields.io/badge/QA-Automation-blue)
 # QA Automation Portfolio (Playwright)
 
 > **목표:**  
