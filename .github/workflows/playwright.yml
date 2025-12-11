@@ -19,22 +19,24 @@ jobs:
         with:
           node-version: 18
 
+      # 루트 패키지 설치 (Playwright 등)
       - name: Install root dependencies
         run: npm install
 
+      # mock-server 폴더 안의 express 등 설치
       - name: Install mock-server dependencies
         working-directory: ./mock-server
         run: npm install
 
-      - name: Start mock server
-        working-directory: ./mock-server
-        run: |
-          node mock-server.js &
-          sleep 5
-
-
+      # Playwright 브라우저 설치
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      - name: Run Playwright tests
-        run: npx playwright test
+      # ✅ mock 서버 실행 + 테스트를 한 스텝에서 처리
+      - name: Run Playwright tests with mock server
+        run: |
+          cd mock-server
+          node mock-server.js &
+          cd ..
+          sleep 5
+          npx playwright test
