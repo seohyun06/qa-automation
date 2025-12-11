@@ -83,6 +83,7 @@ Mock 서버(`http://localhost:4000`)를 직접 구성하여:
 ---
 ## 전체 테스트 실행 결과
 <img src="./docs/images/test-report.png" width="800" />
+
 ---
 
 # ⭐ 5. 핵심 설계 포인트
