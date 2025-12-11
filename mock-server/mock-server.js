@@ -18,9 +18,9 @@ app.post('/login', (req, res) => {
     });
   }
 
-  // 실패 케이스: 잘못된 자격 증명
+    // 실패 케이스: 잘못된 자격 증명
   return res.status(401).json({
-    message: 'Invalid email or password',
+    error: 'Invalid credentials',
   });
 });
 
