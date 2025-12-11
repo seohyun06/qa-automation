@@ -1,7 +1,6 @@
 # QA Automation Portfolio (Playwright)
 
 > **목표:**  
-> 토스증권 Test Automation Assistant 포지션을 염두에 두고,  
 > 로그인 기능을 중심으로 **E2E(UI) + API 레벨 테스트 자동화**를 설계·구현한 포트폴리오입니다.
 > 단순 테스트 작성이 아니라, **실행 환경 제약(외부 API 403 차단)을 분석 → Mock 서버로 테스트 인프라 재설계**하는 등의 **문제 해결 능력과 자동화 전략 수립 능력**을 중심으로 구성했습니다.
 ---
@@ -35,25 +34,29 @@ Mock API 서버를 직접 구성하여 테스트 재현성과 안정성을 확�
 
 ## 3. 폴더 구조
 
-qa-automation-portfolio/
+## 3. 폴더 구조
+
+```bash
+qa-automation/
 │
 ├── README.md
 ├── playwright.config.ts
 │
 ├── mock-server/
-│ ├── mock-server.js
-│ ├── package.json
-│ └── node_modules/
+│   ├── mock-server.js
+│   ├── package.json
+│   └── node_modules/
 │
 ├── docs/
-│ ├── automation-strategy.md
-│ └── test-scenarios.md
+│   ├── automation-strategy.md
+│   └── test-scenarios.md
 │
 └── tests/
-├── e2e/
-│ └── auth.login.spec.ts
-└── api/
-└── auth.api.spec.ts
+    ├── e2e/
+    │   └── auth.login.spec.ts
+    └── api/
+        └── auth.api.spec.ts
+```
         
 
 ## 4. 자동화 범위
